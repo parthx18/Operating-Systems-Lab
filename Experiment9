@@ -1,0 +1,49 @@
+Experiment 9: Basic Shell Commands and Scripting
+1. Basic Shell Commands (List for Documentation)
+Before writing scripts, you should list these essential commands in your README:
+ls - List directory contents
+pwd - Print working directory
+whoami - Display current user
+date - Display system date and time
+cal - Display a calendar
+
+2. The Shell Script (basics.sh)
+This script demonstrates variable declaration, reading input, and basic arithmetic.
+
+Bash
+#!/bin/bash
+
+# 1. Displaying a message
+echo "--- Welcome to Shell Scripting ---"
+
+# 2. Taking User Input
+echo -n "Enter your Name: "
+read name
+echo "Hello $name, today is $(date)"
+
+# 3. Performing Arithmetic Operations
+echo -n "Enter first number: "
+read a
+echo -n "Enter second number: "
+read b
+
+sum=$((a + b))
+diff=$((a - b))
+prod=$((a * b))
+
+echo "Sum: $sum"
+echo "Difference: $diff"
+echo "Product: $prod"
+
+# 4. Checking System Info
+echo "Current User: $USER"
+echo "Current Directory: $(pwd)"
+Short Description for GitHub
+This experiment introduces the Bash Shell. A shell script is a plain text file containing a series of commands. We use .sh as the file extension. To run this script on Ubuntu, use the following commands:
+
+Give execution permission: chmod +x basics.sh
+Run the script: ./basics.sh
+Key Concepts to Include:
+Variables: No space is allowed around the = sign during assignment (e.g., VAR=10).
+Command Substitution: Using $(command) allows you to use the output of a command as a variable value.
+Arithmetic: Double parentheses $(( ... )) are used for integer math in Bash.
