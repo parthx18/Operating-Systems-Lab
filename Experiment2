@@ -1,0 +1,4 @@
+2. Process Management Commands
+Description: Implementation of commands used to monitor and control system processes.
+
+Commands: ps (report process status), top (dynamic real-time view), kill (terminate a process), nice (change priority), and jobs.
