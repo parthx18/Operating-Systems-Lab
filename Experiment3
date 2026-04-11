@@ -33,3 +33,10 @@ int main() {
     printf("Hello from Process: %d\n", getpid());
     return 0;
 }
+
+
+Number of Forks,Total Processes,New Processes Created
+1 (Single),2,1
+2 (Double),4,3
+3 (Triple),8,7
+n,2n,2n−1
