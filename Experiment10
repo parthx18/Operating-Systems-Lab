@@ -1,0 +1,54 @@
+Experiment 10: Shell Script for If-Else Statements
+The Script (conditional.sh)
+This script demonstrates how to handle numerical comparisons (even/odd) and check file properties.
+
+Bash
+#!/bin/bash
+echo "--- If-Else Conditional Demonstration ---"
+
+# Example 1: Check if a number is Even or Odd
+echo -n "Enter a number: "
+read num
+if [ $((num % 2)) -eq 0 ]; then
+    echo "Result: $num is an Even number."
+else
+    echo "Result: $num is an Odd number."
+fi
+echo "---------------------------------------"
+
+# Example 2: Check if a user is eligible to vote
+echo -n "Enter your age: "
+read age
+if [ $age -ge 18 ]; then
+    echo "Status: You are eligible to vote."
+else
+    stop_age=$((18 - age))
+    echo "Status: You are not eligible. Wait $stop_age more year(s)."
+fi
+echo "---------------------------------------"
+
+# Example 3: Check if a file exists (Useful for OS tasks)
+echo -n "Enter a filename to check: "
+read filename
+if [ -f "$filename" ]; then
+    echo "File '$filename' exists in this directory."
+else
+    echo "File '$filename' does not exist."
+fi
+Short Description for GitHub
+Title: Implementation of Decision Making in Shell Scripting.
+
+This experiment demonstrates the use of if-else blocks to control the execution flow of a script based on specific conditions.
+Key Syntax used:
+if [ condition ]; then ... else ... fi
+Comparison Operators: >    * -eq (Equal to)
+-ne (Not equal to)
+-gt (Greater than)
+-ge (Greater than or equal to)
+-lt (Less than)
+File Test: -f checks if a regular file exists.
+
+How to Run:
+Save the code as exp10.sh.
+Open the terminal and run: chmod +x exp10.sh
+Execute it using: ./exp10.sh
