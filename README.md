@@ -13,8 +13,6 @@ This repository contains the implementation of core Operating System concepts as
 8.  **FIFO** - First-In-First-Out Page Replacement.
 9.  **Shell Intro** - Variables and arithmetic in Bash.
 10. **Shell Logic** - If-Else conditionals in scripts.
-11. **LRU** - Least Recently Used Page Replacement.
-12. **Synchronization** - Producer-Consumer Problem.
 
 ## 🛠️ How to Run
 - For C programs: `gcc filename.c -o output && ./output`
