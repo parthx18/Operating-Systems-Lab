@@ -1,4 +1,29 @@
 2. Process Management Commands
 Description: Implementation of commands used to monitor and control system processes.
-
 Commands: ps (report process status), top (dynamic real-time view), kill (terminate a process), nice (change priority), and jobs.
+In Linux, process management involves monitoring, controlling, and terminating the various tasks (processes) running on your system. Each process is assigned a unique **Process ID (PID)** used for identification.
+
+- **Monitoring processes:** View active processes and resource consumption (CPU, memory).
+- **Terminating & Controlling:** Stop or kill processes.
+- **Managing Priority (Niceness):** Values range from -20 (Highest Priority) to 19 (Lowest Priority).
+- **Job Control:** Manage tasks within the current terminal session.
+
+## Commands Reference
+
+| Sr. No | Command | Description |
+| :--- | :--- | :--- |
+| 1 | `applicationname &` | Runs any application in the background. |
+| 2 | `pidof processname` | Returns process id of a running program. |
+| 3 | `fg job_no` | Brings background job to foreground. |
+| 4 | `top` | Shows live system processes and resource usage. |
+| 5 | `kill pid` | Terminates a running process using PID. |
+| 6 | `nice -n [val] [name]` | Starts a process with a specific priority. |
+| 7 | `ps` | Shows processes in current terminal session. |
+| 8 | `pstree` | Displays parent-child hierarchy of processes. |
+| 9 | `ps aux` | Displays all processes with user/CPU/Mem details. |
+| 10 | `ps -axjk` | Displays processes in hierarchical tree format. |
+| 11 | `renice -n [val] [pid]` | Modifies priority of a running process. |
+| 12 | `jobs` | Shows active background and stopped jobs. |
+| 13 | `bg` | Resumes a suspended job in the background. |
+| 14 | `killall [name]` | Kills all processes with a given name. |
+| 15 | `pkill [name]` | Terminates process using name matching. |
