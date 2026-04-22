@@ -1,2 +1,26 @@
 1. Basic Linux Commands
 Description: Introduction to the Ubuntu terminal environment. This covers file navigation (ls, cd, pwd), file manipulation (touch, cp, mv, rm), and directory management (mkdir).
+A collection of essential Linux commands for beginners and professionals.
+
+##  Navigation & File Management
+- `pwd`: Print working directory.
+- `ls -la`: List files with hidden items and permissions.
+- `cd <path>`: Change directory.
+- `mkdir <name>`: Create a directory.
+- `touch <file>`: Create an empty file.
+- `cp <src> <dest>`: Copy file/folder.
+- `mv <src> <dest>`: Move or rename.
+- `rm -rf <path>`: Remove recursively and forcefully.
+
+## File Operations
+- `cat <file>`: Print file content.
+- `grep "pattern" <file>`: Search for text.
+- `tail -f <file>`: Output the last part of a file (live).
+- `nano` / `vi`: Terminal editors.
+
+##  Permissions & System
+- `chmod 755 <file>`: Set read/write/execute permissions.
+- `chown user:group <file>`: Change ownership.
+- `sudo`: Run with root privileges.
+- `df -h`: Disk usage.
+- `top`: System monitor.
